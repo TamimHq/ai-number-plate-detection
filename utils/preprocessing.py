@@ -31,4 +31,26 @@ def preprocess_plate(img):
 
     gray = clahe.apply(gray)
 
-    return gray
+    kernel = np.array([
+        [0,-1,0],
+        [-1,5,-1],
+        [0,-1,0]
+    ])
+
+    sharp = cv2.filter2D(
+        gray,
+        -1,
+        kernel
+    )
+
+    _,binary = cv2.threshold(
+        sharp,
+        0,
+        255,
+        cv2.THRESH_BINARY + cv2.THRESH_OTSU
+    )
+
+    return cv2.cvtColor(
+        binary,
+        cv2.COLOR_GRAY2BGR
+    )

@@ -39,10 +39,74 @@ Supports:
 
 ---
 
+# 📊 Outputs
+
+The system generates:
+
+- Processed Videos
+- Detected Plates
+- Vehicle Information
+- Excel Logs
+
+Example Log:
+
+| Time | Vehicle | Color | Plate |
+|------|------|------|------|
+| 12:30:10 | Car | White | ঢাকা মেট্রো গ ১২-৩৪৫৬ |
+
+---
+
+# 🧠 Pipeline Overview
+
+1. Vehicle Detection
+2. License Plate Localization
+3. Plate Cropping
+4. OCR / Character Detection
+5. Vehicle Color Classification
+6. Multi-frame Voting
+7. Excel Registration Logging
+
+---
+
+# ⚡ Performance
+
+Optimized for:
+
+- NVIDIA A100
+- CUDA GPUs
+- Google Colab Pro
+
+---
+
+# 📸 Results and Outputs
+
+
+# Training Results
+
+| Model | Results |
+|---|---|
+| Detector | ![](outputs/Results/results_vehicles.png)|
+| Color Classifier | ![](outputs/Results/results_colors.png) |
+| Bangla Character | ![](outputs/Results/results_characters.png)|
+
+
+# Confusion Matrices
+
+| Detector | Color | Character |
+|---|---|---|
+| ![](outputs/Results/confusion_matrix_vehicles.png)| ![](outputs/Results/confusion_matrix_colors.png)| ![](outputs/Results/confusion_matrix_characters.png) |
+
+### Bangla Plate Detection
+![](outputs/images/BanglaPlateDetect.png)
+### English Plate Detection
+![Result](outputs/images/EnglishPlateDetect.png)
+
+---
+
 # 📦 Installation
 
 ```bash
-git clone https://github.com/yourusername/ai-number-plate-detection.git
+git clone https://github.com/TamimHq/ai-number-plate-detection.git
 
 cd ai-number-plate-detection
 
@@ -112,51 +176,6 @@ python inference/image_test_bangla.py
 ```bash
 python inference/image_test_english.py
 ```
-
----
-
-# 📊 Outputs
-
-The system generates:
-
-- Processed Videos
-- Detected Plates
-- Vehicle Information
-- Excel Logs
-
-Example Log:
-
-| Time | Vehicle | Color | Plate |
-|------|------|------|------|
-| 12:30:10 | Car | White | ঢাকা মেট্রো গ ১২-৩৪৫৬ |
-
----
-
-# 🧠 Pipeline Overview
-
-1. Vehicle Detection
-2. License Plate Localization
-3. Plate Cropping
-4. OCR / Character Detection
-5. Vehicle Color Classification
-6. Multi-frame Voting
-7. Excel Registration Logging
-
----
-
-# ⚡ Performance
-
-Optimized for:
-
-- NVIDIA A100
-- CUDA GPUs
-- Google Colab Pro
-
----
-
-# 📸 Demo
-
-Add screenshots and videos here.
 
 ---
 
