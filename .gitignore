@@ -3,7 +3,6 @@ __pycache__/
 *.pt
 *.pth
 runs/
-outputs/
 datasets/
 *.mp4
 *.xlsx
