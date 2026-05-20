@@ -106,7 +106,7 @@ Optimized for:
 # 📦 Installation
 
 ```bash
-git clone https://github.com/TamimHq/ai-number-plate-detection.git
+git clone https://github.com/TamimHq/AI-Vehicle-Number-Plate-Detection-System.git
 
 cd ai-number-plate-detection
 
