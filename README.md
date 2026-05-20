@@ -86,15 +86,15 @@ Optimized for:
 | Model | Results |
 |---|---|
 | Detector | ![](outputs/Results/results_vehicles.png)|
-| Color Classifier | ![](outputs/Results/results_colors.png) |
-| Bangla Character | ![](outputs/Results/results_characters.png)|
+| Color Classifier | ![](outputs/Results/results_color_classification.png) |
+| Bangla Character | ![](outputs/Results/results_char.png)|
 
 
 # Confusion Matrices
 
 | Detector | Color | Character |
 |---|---|---|
-| ![](outputs/Results/confusion_matrix_vehicles.png)| ![](outputs/Results/confusion_matrix_colors.png)| ![](outputs/Results/confusion_matrix_characters.png) |
+| ![](outputs/Results/confusion_matrix_normalized_vehicles.png)| ![](outputs/Results/confusion_matrix_normalized_color_classification.png)| ![](outputs/Results/confusion_matrix_normalized_char.png) |
 
 ### Bangla Plate Detection
 ![](outputs/images/BanglaPlateDetect.png)
